@@ -1,5 +1,5 @@
 import random
-
+#This is a program to complete my Ecology final test. It's about natural selection.
 
 #total
 aa=20000*0.5
