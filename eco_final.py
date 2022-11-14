@@ -1,5 +1,6 @@
 import random
 #This is a program to complete my Ecology final test. It's about natural selection.
+#Many of the codes might be not that elegant cuz I'm a new learner major in biology.
 
 #total
 aa=20000*0.5
