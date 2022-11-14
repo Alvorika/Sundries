@@ -13,7 +13,7 @@ h=0   # Hetero
 r=0   # Recessive
 rate=25
 
-for year in range(1,50):
+for year in range(1,100):
 
     #pick 2 gametes to compose an individual
     while(aa>1 and a>1):
@@ -76,12 +76,17 @@ for year in range(1,50):
         if death<=rate:
             r-=1
 
-    rate+=1
+    #more and more pollution were caused, so the rate of been captured by their natural enemies went up. when the environment recovered, the rate went down again.
+    if (year<50):
+        rate+=1
+    else:
+        rate-=1
 
 
-    #break individuals into 2 gametes and *1.5
+    #break individuals into 2 gametes and *2
     aa=(2*d+h)*2
     a=(h+2*r)*2
 
-    print(d+h,r,aa,a)
+    print(year,d+h,r,aa,a)
     d=h=r=0
+
